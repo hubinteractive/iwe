@@ -1,0 +1,1 @@
+web: gunicorn iwe_24.wsgi
