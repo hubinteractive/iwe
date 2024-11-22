@@ -3,6 +3,132 @@
 
 /* #5c0098 */
 
+body {
+    font-family: "Spectral", serif!important;
+    font-family: "Frank Ruhl Libre", serif!important;
+    /* font-family: "Poppins", serif!important; */
+    font-weight: 400!important;
+}
+
+.Spectral {
+    font-family: "Spectral", serif!important;
+}
+
+.frank-ruhl-libre {
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.arapey-regular {
+    font-family: "Arapey", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.arapey-regular-italic {
+    font-family: "Arapey", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.main_container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main_container {
+    max-width: 1540px;
+}
+
+.services {
+    width: 100%;
+}
+
+.service-item {
+    width: 100%;
+    background-color: #fbfbfb;
+    border: .25em solid #fbfbfb;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4em 5em;
+    transition: all .3s;
+    display: flex;
+}
+
+.service-item-img {
+    width: auto;
+    height: 12.5em;
+    opacity: .5;
+}
+
+@media (max-width:980px) {
+    .service-item {
+        padding: .4em .5em;
+    }
+    .service-item-img {
+        width: auto;
+        height: auto;
+        opacity: .5;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.banner {
+    height: 350px;
+    border-bottom: solid 1px gray;
+}
+
+
+/* fonts */
+
+h2 {
+    font-size: 3em;
+}
+
+.f-color-grey {
+    color: #828282;
+}
+
+.f-18 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.f-25 {
+    font-size: 2.45rem;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+
+/* margins and paddings */
+
+.my-7 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
 .btn {
     --bs-btn-padding-x: 0.75rem;
     --bs-btn-padding-y: 0.375rem;
@@ -39,6 +165,43 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.btn-link {
+    grid-column-gap: 1em;
+    white-space: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.btn-link-text-wrapper {
+    flex-direction: column;
+    display: flex;
+}
+
+.btn-link-underline {
+    width: 100%;
+    height: 1px;
+    justify-content: flex-start;
+    margin-top: .625em;
+    display: flex;
+    position: relative;
+}
+
+.btn-link-arrow {
+    width: 1.125em;
+    height: 1.125em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btn-link-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
 .dropdown-menu {
     --bs-dropdown-zindex: 1000;
     --bs-dropdown-min-width: 10rem;
@@ -70,4 +233,9 @@
     color: var(--bs-dropdown-color);
     text-align: left;
     list-style: none;
+}
+
+.border-1 {
+    border-color: black;
+    border-style: solid;
 }
